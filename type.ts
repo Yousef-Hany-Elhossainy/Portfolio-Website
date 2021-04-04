@@ -24,4 +24,4 @@ export interface Iproject{
     key_techs: string[];
 }
 
-export type Category = "React"|"Node"|"Express"|"Mongo"|"Python"|"Solidity"|"Flask"|"C++"|"Unreal"|"TypeScript"
+export type Category = "React"|"Node"|"Express"|"Mongo"|"Python"|"Solidity"|"Flask"|"C++"|"Unreal"|"TypeScript"|"Django"

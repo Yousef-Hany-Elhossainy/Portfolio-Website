@@ -2,7 +2,7 @@ import {RiComputerLine} from"react-icons/ri";
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
-import { Iservice, ISkill } from "./type";
+import { Iproject, Iservice, ISkill } from "./type";
 import{BsCircleFill} from "react-icons/bs";
 
 
@@ -99,4 +99,88 @@ export const tools: ISkill[] = [
     name: "Framer",
     level: "45",
   },
+];
+
+export const projects: Iproject[] = [
+  { 
+    name: "Voice Controlled Budget Tracker",
+    description:
+      "This app shows a statistical view about corona virus over the world",
+    image_path: "/images/Voice-Powered-Budget-Tracker.png",
+    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
+    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
+    category: ["React",],
+    key_techs: ["React", "Chart.js", "Material UI"],
+  },
+  {
+    name: "Blockchain App",
+    image_path: "/images/BlockchainApp.png",
+    deployed_url: "https://visual-algorithm.web.app/",
+    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
+    category: ["React"],
+    description:
+      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
+    key_techs: ["React", "firebase", "Framer Motion"],
+  },
+  { 
+    name: "Voice Controlled Budget Tracker2",
+    description:
+      "This app shows a statistical view about corona virus over the world",
+    image_path: "/images/Voice-Powered-Budget-Tracker.png",
+    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
+    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
+    category: ["React",],
+    key_techs: ["React", "Chart.js", "Material UI"],
+  },
+  {
+    name: "Blockchain App2",
+    image_path: "/images/BlockchainApp.png",
+    deployed_url: "https://visual-algorithm.web.app/",
+    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
+    category: ["React"],
+    description:
+      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
+    key_techs: ["React", "firebase", "Framer Motion"],
+  },
+  { 
+    name: "Voice Controlled Budget Tracker3",
+    description:
+      "This app shows a statistical view about corona virus over the world",
+    image_path: "/images/Voice-Powered-Budget-Tracker.png",
+    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
+    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
+    category: ["React",],
+    key_techs: ["React", "Chart.js", "Material UI"],
+  },
+  {
+    name: "Blockchain App3",
+    image_path: "/images/BlockchainApp.png",
+    deployed_url: "https://visual-algorithm.web.app/",
+    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
+    category: ["React"],
+    description:
+      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
+    key_techs: ["React", "firebase", "Framer Motion"],
+  },
+  { 
+    name: "Voice Controlled Budget Tracker4",
+    description:
+      "This app shows a statistical view about corona virus over the world",
+    image_path: "/images/Voice-Powered-Budget-Tracker.png",
+    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
+    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
+    category: ["React",],
+    key_techs: ["React", "Chart.js", "Material UI"],
+  },
+  {
+    name: "Blockchain App4",
+    image_path: "/images/BlockchainApp.png",
+    deployed_url: "https://visual-algorithm.web.app/",
+    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
+    category: ["React"],
+    description:
+      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
+    key_techs: ["React", "firebase", "Framer Motion"],
+  },
+
 ];
