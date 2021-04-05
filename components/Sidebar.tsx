@@ -3,6 +3,7 @@ import {AiFillGithub,AiFillLinkedin} from"react-icons/ai";
 import {GoLocation} from"react-icons/go";
 import {GiTie} from"react-icons/gi";
 import {useTheme} from"next-themes";
+import Image from"next/image";
 
 const Sidebar = () => {
     const{ theme,setTheme } = useTheme();
@@ -12,8 +13,8 @@ const Sidebar = () => {
     
     return (
         <div>
-            <img src="https://badoystudio.com/wp-content/uploads/2018/11/apa-itu-programmer.jpeg" alt="My Avatar" 
-            className="w-32 h-32 mx-auto rounded-full" />
+            <Image src="/images/programmer.jpeg" alt="My Avatar" 
+            className="w-32 h-32 mx-auto rounded-full" width="384" height="256" layout ="intrinsic"/>
             <h3 className="my-4 font-medium tracking-wider text-3x1 font-kaushan ">
             <span className="text-green-400 ">Yousef </span>
                 Elhossainy
