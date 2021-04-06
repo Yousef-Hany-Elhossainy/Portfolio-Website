@@ -21,9 +21,12 @@ const ProjectsNavbar:FunctionComponent<{handleProjectsFilter:Function ; active:s
         <div className="flex py-2 space-x-3 overflow-x-auto list-none">
             <NavItem value="all" {...props}/>
             <NavItem value="React" {...props}/>
-            <NavItem value="Mongo" {...props}/>
-            <NavItem value="Django" {...props}/>
+            <NavItem value="Python" {...props}/>
+            <NavItem value="JavaScript" {...props}/>
             <NavItem value="Node" {...props}/>
+            <NavItem value="C++" {...props}/>
+            <NavItem value="Solidity" {...props}/>
+            <NavItem value="UnrealEngine" {...props}/>
         </div>
     )
 }

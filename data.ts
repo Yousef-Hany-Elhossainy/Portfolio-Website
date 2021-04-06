@@ -1,10 +1,13 @@
-import {RiComputerLine} from"react-icons/ri";
+import {RiComputerLine, RiReactjsFill} from"react-icons/ri";
 import { FaServer } from "react-icons/fa";
-import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
+import { AiFillGithub, AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
 import { MdDeveloperMode } from "react-icons/md";
 import { Iproject, Iservice, ISkill } from "./type";
 import{BsCircleFill} from "react-icons/bs";
-
+import { GiMechanicGarage } from "react-icons/gi";
+import {IoGameController, IoLogoJavascript, IoLogoNodejs, IoLogoPython} from "react-icons/io5";
+import {DiNodejs} from "react-icons/di";
+import {SiArduino, SiAutodesk, SiCplusplus, SiEthereum, SiFlask, SiGodotengine, SiUnrealengine} from "react-icons/si";
 
 
 export const services:Iservice[] = [
@@ -12,175 +15,166 @@ export const services:Iservice[] = [
         Icon: RiComputerLine,
         title: "Frontend Development",
         about:
-          "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+          "Build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
       },
       {
         Icon: FaServer,
         title: "Backend  Development",
         about:
-          "handle database, server, api using <b>Express </b> & other popular frameworks",
-      },
-      {
-        Icon: AiOutlineApi,
-        title: "API Development",
-        about:
-          "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
-      },
-      {
-        Icon: MdDeveloperMode,
-        title: "Competitive Coder",
-        about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+          "Build database, server, api using <b>Express </b>/<b>Flask</b> with <b>MongoDB</b>",
       },
       {
         Icon: AiOutlineAntDesign,
         title: "UI/UX designer",
         about:
-          "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+          "Design a stunning user interface with animations using <b>Tailwind CSS</b>  & <b>Framer Motion</b> ",
       },
       {
-        Icon: RiComputerLine,
-        title: "Whatever",
+        Icon: MdDeveloperMode,
+        title: "Mobile App Development",
+        about: "Develop an app with <b>React Native</b> for <b>Android</b>  and <b>IPhone</b> ",
+      },
+      {
+        Icon: GiMechanicGarage,
+        title: "Mechanical Design and Simulation",
         about:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
+          "Design, Modeling, and Simulation of functional parts/assemblies using <b>Fusion 360</b> ",
+      },
+      {
+        Icon: IoGameController,
+        title: "Game Development",
+        about:
+          "Make a game with <b>Unreal Engine</b> , <b>Godot Engine</b>, or <b>Pygame</b>",
       },
 ]
 
 export const languages: ISkill[] = [
   {
-    Icon: BsCircleFill,
+    Icon: IoLogoPython,
     name: "Python",
-    level: "45",
+    level: "100",
   },
   {
-    Icon: BsCircleFill,
+    Icon: IoLogoJavascript,
     name: "Java Script",
-    level: "60",
+    level: "100",
   },
   {
-    Icon: BsCircleFill,
-    name: "React Native",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
+    Icon: RiReactjsFill,
     name: "React",
-    level: "70",
+    level: "100",
   },
   {
-    Icon: BsCircleFill,
-    name: "Django",
-    level: "80",
+    Icon: RiReactjsFill,
+    name: "React Native",
+    level: "100",
+  },  
+  {
+    Icon: IoLogoNodejs,
+    name: "Express",
+    level: "100",
   },
   {
-    Icon: BsCircleFill,
-    name: "Bootstrap",
-    level: "80",
+    Icon: SiFlask,
+    name: "Flask",
+    level: "100",
+  },
+  {
+    Icon: SiCplusplus,
+    name: "C++",
+    level: "100",
+  },
+  {
+    Icon: SiEthereum,
+    name: "Solidity",
+    level: "100",
   },
 ];
 
 export const tools: ISkill[] = [
   {
-    Icon: BsCircleFill,
-    name: "Figma",
-    level: "85",
+    Icon: SiAutodesk,
+    name: "Autodesk Fusion 360",
+    level: "100",
   },
   {
-    Icon: BsCircleFill,
-    name: "Photoshop",
-    level: "45",
+    Icon: AiFillGithub,
+    name: "Git/Github",
+    level: "100",
   },
   {
-    Icon: BsCircleFill,
-    name: "Illustrator",
-    level: "60",
+    Icon: SiUnrealengine,
+    name: "Unreal Engine",
+    level: "100",
   },
   {
-    Icon: BsCircleFill,
-    name: "Framer",
-    level: "45",
+    Icon: SiArduino,
+    name: "Arduino/Raspberry Pi",
+    level: "100",
   },
+  {
+    Icon: SiGodotengine,
+    name: "Godot Engine",
+    level: "100",
+  },
+
+  
 ];
 
 export const projects: Iproject[] = [
   { 
+    id: 1,
     name: "Voice Controlled Budget Tracker",
     description:
-      "This app shows a statistical view about corona virus over the world",
+      "Add incomes and expenses manually or using voice commands, store them in local storage and display them on a chart.",
     image_path: "/images/Voice-Powered-Budget-Tracker.png",
     deployed_url: "https://voice-powered-budget-tracker-app.netlify.app",
-    github_url: "https://github.com/Yousef-Hany-Elhossainy/Python-Blockchain-App.git",
+    github_url: "https://github.com/Yousef-Hany-Elhossainy/Voice-Powered-Expense-Tracker-React-App.git",
     category: ["React",],
-    key_techs: ["React", "Chart.js", "Material UI"],
+    key_techs: ["React","Material UI","Speechly Api"],
   },
-  {
+  { 
+    id: 2,
     name: "Blockchain App",
     image_path: "/images/BlockchainApp.png",
-    deployed_url: "https://voice-powered-budget-tracker-app.netlify.app",
+    deployed_url: "https://github.com/Yousef-Hany-Elhossainy/Python-Blockchain-App.git",
     github_url: "https://github.com/Yousef-Hany-Elhossainy/Python-Blockchain-App.git",
-    category: ["React"],
+    category: ["Python", "Flask"],
     description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
+      "A complete blockchain app with UI, wallets,block hashing, proof of work, consensus mechanism, and multiple nodes.",
+    key_techs: ["Python","Flask" ],
   },
-  { 
-    name: "Voice Controlled Budget Tracker2",
+  { id: 3,
+    name: "Ai Dino Game",
     description:
-      "This app shows a statistical view about corona virus over the world",
-    image_path: "/images/Voice-Powered-Budget-Tracker.png",
-    deployed_url: "https://voice-powered-budget-tracker-app.netlify.app",
-    github_url: "https://github.com/Yousef-Hany-Elhossainy/Python-Blockchain-App.git",
-    category: ["React","Node"],
-    key_techs: ["React", "Chart.js", "Material UI"],
-  },
-  {
-    name: "Blockchain App2",
-    image_path: "/images/BlockchainApp.png",
-    deployed_url: "https://voice-powered-budget-tracker-app.netlify.app",
-    github_url: "https://github.com/Yousef-Hany-Elhossainy/Python-Blockchain-App.git",
-    category: ["React","Django"],
-    description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
-  },
-  { 
-    name: "Voice Controlled Budget Tracker3",
-    description:
-      "This app shows a statistical view about corona virus over the world",
-    image_path: "/images/Voice-Powered-Budget-Tracker.png",
-    deployed_url: "https://voice-powered-budget-tracker-app.netlify.app",
-    github_url: "https://github.com/Yousef-Hany-Elhossainy/Python-Blockchain-App.git",
-    category: ["Node",],
-    key_techs: ["React", "Chart.js", "Material UI"],
-  },
-  {
-    name: "Blockchain App3",
-    image_path: "/images/BlockchainApp.png",
-    deployed_url: "https://voice-powered-budget-tracker-app.netlify.app",
-    github_url: "https://github.com/Yousef-Hany-Elhossainy/Python-Blockchain-App.git",
-    category: ["Django","Mongo"],
-    description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
-  },
-  { 
-    name: "Voice Controlled Budget Tracker4",
-    description:
-      "This app shows a statistical view about corona virus over the world",
-    image_path: "/images/Voice-Powered-Budget-Tracker.png",
-    deployed_url: "https://voice-powered-budget-tracker-app.netlify.app",
-    github_url: "https://github.com/Yousef-Hany-Elhossainy/Python-Blockchain-App.git",
-    category: ["React","Mongo"],
-    key_techs: ["React", "Chart.js", "Material UI"],
-  },
-  {
-    name: "Blockchain App4",
-    image_path: "/images/BlockchainApp.png",
-    deployed_url: "https://voice-powered-budget-tracker-app.netlify.app",
-    github_url: "https://github.com/Yousef-Hany-Elhossainy/Python-Blockchain-App.git",
+      "The browser dino game Played by A.I. or player control, Try to beat the A.I's high score!",
+    image_path: "/images/AI-Dino-Game.png",
+    deployed_url: "https://github.com/Yousef-Hany-Elhossainy/A.I.-Dino-Game.git",
+    github_url: "https://github.com/Yousef-Hany-Elhossainy/A.I.-Dino-Game.git",
     category: ["Python"],
-    description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
+    key_techs: ["Python", "N.E.A.T Python"],
   },
+  { id: 4,
+    name: "Javascript Snake Game",
+    image_path: "/images/SnakeGame.png",
+    deployed_url: "https://github.com/Yousef-Hany-Elhossainy/AI-Javascript-Snake-Game.git",
+    github_url: "https://github.com/Yousef-Hany-Elhossainy/AI-Javascript-Snake-Game.git",
+    category: ["JavaScript"],
+    description:
+      "Snake game made in JavaScript, HTML, and css",
+    key_techs: ["JavaScript","HTML","CSS"],
+  },
+  { 
+    id: 5,
+    name: "Python Minecraft Game",
+    description:
+      "A very simple minecraft style game using the Ursina Engine with Python.",
+    image_path: "/images/MinecraftGame.png",
+    deployed_url: "https://github.com/Yousef-Hany-Elhossainy/Minecraft-python-game.git",
+    github_url: "https://github.com/Yousef-Hany-Elhossainy/Minecraft-python-game.git",
+    category: ["Python",],
+    key_techs: ["Python", "Ursina Engine",],
+  },
+  
 
 ];

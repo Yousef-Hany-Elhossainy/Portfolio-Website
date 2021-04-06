@@ -1,5 +1,5 @@
 import React from 'react'
-import {AiFillGithub,AiFillLinkedin} from"react-icons/ai";
+import {AiFillGithub,AiFillLinkedin, AiFillYoutube} from"react-icons/ai";
 import {GoLocation} from"react-icons/go";
 import {GiTie} from"react-icons/gi";
 import {useTheme} from"next-themes";
@@ -23,18 +23,18 @@ const Sidebar = () => {
                 Web Developer
             </p>
             <a className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" 
-                href ="" 
-                download="">
+                href ="/images/CVNEW.pdf" 
+                download="CVNEW.pdf">
                 <GiTie className="w-6 h-6"/>Download Resume</a>
             <div className="flex justify-around w-9/12 mx-auto my-5 text-blue-700 md:w-full">
-                <a href="">
+                <a href="https://github.com/Yousef-Hany-Elhossainy" aria-label="Github">
                     <AiFillGithub className="w-8 h-8 cursor-pointer"/>
                 </a>
-                <a href="">
-                    <AiFillGithub className="w-8 h-8 cursor-pointer"/>
+                <a href="https://github.com/Yousef-Hany-Elhossainy" aria-label="Linkedin">
+                    <AiFillLinkedin className="w-8 h-8 cursor-pointer"/>
                 </a>
-                <a href="">
-                    <AiFillGithub className="w-8 h-8 cursor-pointer"/>
+                <a href="https://github.com/Yousef-Hany-Elhossainy" aria-label="Youtube">
+                    <AiFillYoutube className="w-8 h-8 cursor-pointer"/>
                 </a>
             </div>
             <div 

@@ -15,6 +15,7 @@ export interface ISkill{
 }
 
 export interface Iproject{
+    id: number;
     name: string;
     description: string;
     image_path: string;
@@ -24,4 +25,4 @@ export interface Iproject{
     key_techs: string[];
 }
 
-export type Category = "React"|"Node"|"Express"|"Mongo"|"Python"|"Solidity"|"Flask"|"C++"|"Unreal"|"TypeScript"|"Django"
+export type Category = "React"|"Node"|"Express"|"Mongo"|"Python"|"Solidity"|"Flask"|"C++"|"Unreal"|"TypeScript"|"Django"|"JavaScript"|"UnrealEngine"|"HTML"|"CSS"

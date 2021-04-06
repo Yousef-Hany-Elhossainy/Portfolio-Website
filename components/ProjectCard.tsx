@@ -9,8 +9,11 @@ import { FadeInUp, Stagger } from '../animations';
 
 const ProjectCard:FunctionComponent<{
     project: Iproject;
+    showDetail: null|number;
+    setShowDetail: (id: null|number) => void;
 }> = ({
     project:{
+        id,
         name,
         description,
         image_path,
@@ -18,14 +21,16 @@ const ProjectCard:FunctionComponent<{
         github_url,
         category,
         key_techs,
-    }
+    },
+    showDetail,
+    setShowDetail,
 }) => {
-    const [showDetail, setshowDetail] = useState(false);
+    
     return (
         <div>
             <Image src={image_path} alt={name} 
             className="rounded-lg cursor-pointer" 
-            onClick={()=>setshowDetail(true)}
+            onClick={()=>setShowDetail(id)}
             width="300"
             height="150"
             layout ="responsive"
@@ -35,8 +40,8 @@ const ProjectCard:FunctionComponent<{
             onClick={()=>setshowDetail(true)}
             /> */}
             <p className="my-2 text-center">{name}</p>
-            {showDetail && (            
-                <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+            {showDetail === id && (            
+                <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
                     <motion.div variants ={Stagger} initial = "initial" animate="animate">
                     <motion.div variants ={FadeInUp} >
                     <Image src={image_path} alt={name} className="rounded-lg" width="300" height="150" layout ="responsive"/>
@@ -62,7 +67,7 @@ const ProjectCard:FunctionComponent<{
                             }
                         </motion.div>
                     </motion.div>
-                <button onClick={()=>setshowDetail(false)} className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200">
+                <button onClick={()=>setShowDetail(null)} className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200">
                     <MdClose size={30} />
                 </button>
                 </div>
