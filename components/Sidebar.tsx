@@ -23,8 +23,8 @@ const Sidebar = () => {
                 Web Developer
             </p>
             <a className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500" 
-                href ="/images/CVNEW.pdf" 
-                download="CVNEW.pdf">
+                href ="/images/CVprog.pdf" 
+                download="CVprog.pdf">
                 <GiTie className="w-6 h-6"/>Download Resume</a>
             <div className="flex justify-around w-9/12 mx-auto my-5 text-blue-700 md:w-full">
                 <a href="https://github.com/Yousef-Hany-Elhossainy" aria-label="Github">
